@@ -1,0 +1,80 @@
+enhanced-rag-system/
+├── README.md
+├── requirements.txt
+├── docker-compose.yml
+├── Dockerfile
+├── .env.example
+├── .gitignore
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py                     # FastAPI main application
+│   └── config.py                   # Configuration settings
+│
+├── core/
+│   ├── __init__.py
+│   ├── document_processor.py       # Universal document processing
+│   ├── chunking.py                # Smart chunking engine
+│   ├── vector_store.py            # ChromaDB vector database
+│   ├── retrieval.py               # Hybrid retrieval & re-ranking
+│   ├── query_processor.py         # Query analysis & processing
+│   ├── prompt_builder.py          # LLM prompt construction
+│   ├── llm_handler.py             # Groq LLM integration
+│   ├── cache.py                   # Query caching system
+│   ├── memory.py                  # Conversation memory
+│   └── rag_system.py              # Main RAG system integration
+│
+├── models/
+│   ├── __init__.py
+│   ├── fine_tuner.py              # Custom fine-tuning
+│   └── embeddings.py              # Embedding models
+│
+├── interfaces/
+│   ├── __init__.py
+│   ├── streamlit_app.py           # Streamlit web interface
+│   ├── fastapi_routes.py          # FastAPI route definitions
+│   └── schemas.py                 # Pydantic models
+│
+├── utils/
+│   ├── __init__.py
+│   ├── file_utils.py              # File handling utilities
+│   ├── text_utils.py              # Text processing utilities
+│   └── validation.py              # Input validation
+│
+├── data/
+│   ├── uploads/                   # Uploaded documents
+│   ├── processed/                 # Processed chunks
+│   ├── models/                    # Fine-tuned models
+│   └── cache/                     # Local cache storage
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_document_processor.py
+│   ├── test_retrieval.py
+│   ├── test_rag_system.py
+│   └── test_api.py
+│
+├── scripts/
+│   ├── setup_db.py               # Database initialization
+│   ├── migrate_data.py           # Data migration
+│   └── benchmark.py              # Performance testing
+│
+├── notebooks/
+│   ├── exploration.ipynb         # Data exploration
+│   ├── evaluation.ipynb          # Model evaluation
+│   └── fine_tuning.ipynb         # Fine-tuning experiments
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+└── logs/
+    ├── app.log
+    ├── queries.log
+    └── errors.log
+    
+
+    
+    
+
