@@ -47,7 +47,7 @@ def create_env_file():
     if not os.path.exists(".env"):
         print("⚙️ Creating .env file...")
         env_content = """# API Keys
-GROQ_API_KEY=AIzaSyC0wMy4Vu6KTTv8cAIcaURmdFZAs5JkKP4
+GROQ_API_KEY=your_groq_api_key
 OPENAI_API_KEY=your_openai_api_key_here
 
 # Database Configuration
