@@ -48,7 +48,7 @@ def create_env_file():
         print("⚙️ Creating .env file...")
         env_content = """# API Keys
 GROQ_API_KEY=your_groq_api_key
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here 
 
 # Database Configuration
 CHROMA_PERSIST_DIR=./data/chroma_db
